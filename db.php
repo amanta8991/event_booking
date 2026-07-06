@@ -5,10 +5,10 @@
 function getDb() {
     static $pdo = null;
     if ($pdo === null) {
-        $host = "localhost";
-        $dbname = "event_booking";
+        $host = "mysql.railway.internal";
+        $dbname = "railway";
         $user = "root";
-        $pass = "";
+        $pass = "BISNsLaswbQETesNrYNTbBCEsZWvyMFv";
 
         try {
             $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $user, $pass, [
